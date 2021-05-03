@@ -9,3 +9,11 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
+
+class Info(models.Model):
+    location = models.CharField(max_length=50)
+    number = models.CharField(max_length=25)
+    email = models.EmailField(max_length=120)
+
+    def __str__(self):
+        return self.location
