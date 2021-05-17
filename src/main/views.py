@@ -11,6 +11,7 @@ def home(request):
 
 def contact(request):
     info = Info.objects.first()
+
     return render(request,'contact.html',{'info':info})
 
 

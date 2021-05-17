@@ -15,7 +15,7 @@
                     <div class="col-sm-4">
                         <div class="section_1">
                             <div><img src="{{ blog.img.url }}" style="max-width: 100%;"></div>
-                            <button type="button" class="date-bt">{{ blog.created_dt }}</button>
+                            <button type="button" class="date-bt">{{ blog.created_dt|date:"D d M Y" }}</button>
                             <p>{{ blog.content }}</p>
                         </div>
                     </div>
